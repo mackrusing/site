@@ -1,0 +1,52 @@
+// css reset
+@use 'reset';
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+// color variables
+:root {
+  /* colors */
+  --red: #e06c75;
+  --green: #98c379;
+  --yellow: #e5c07b;
+  --blue: #61afef;
+  --magenta: #c678dd;
+  --cyan: #56b6c2;
+  /* ui */
+  --bg: #23272e;
+  --mid: #7d828c;
+  --fg: #abb2bf;
+}
+
+body {
+  // text
+  font-family: 'Lato', monospace;
+  font-size: 16px;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  // sizing
+  min-height: 100vh;
+  // colors
+  color: var(--fg);
+  background-color: var(--bg);
+}
+
+main {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 890px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 400px;
+  p {
+    font-size: 3em;
+  }
+  .hero-social-buttons {
+    display: flex;
+  }
+}

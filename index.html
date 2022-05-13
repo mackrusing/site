@@ -1,57 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mack Rusing</title>
-    <link rel="stylesheet" href="./src/style.css" />
-  </head>
+    <!-- metadata -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
 
+    <!-- page info -->
+    <title>Mack Rusing</title>
+    <meta name="description" content="This is the page description!" />
+
+    <!-- styling & icons -->
+    <link href="resources/styles/style.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/982bff74f4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
   <body>
-    <header>
-      <nav>
-        <!-- <img src="./src/images/m-logo.png" /> -->
-        <p class="top-icon">/ M</p>
-        <div class="links">
-          <p>
-            <a href="./#about"><strong>01.</strong> About</a>
-            <a href="./#experience"><strong>02.</strong> Experience</a>
-            <a href="./#contact"><strong>03.</strong> Contact</a>
-          </p>
-        </div>
-      </nav>
-    </header>
     <main>
-      <section class="hero">
-        <h3>Hello world! My name is</h3>
-        <h1>Mack Rusing.</h1>
-        <h2>I create things online.</h2>
+      <!-- hero section -->
+      <div class="hero">
         <p>
-          i'm an aspiring full-stack developer with experience in JavaScript,
-          TypeScript, Python, HTML, and CSS. Currently, I'm focused on learning
-          back-end architecture using Node.js.
+          Hi, my name is Mack Rusing. I'm a web developer based in Phoenix, AZ.
         </p>
-      </section>
-      <section>
-        <h1>01. About</h1>
-        <article>
-          <div>
-            <p>
-              Hello! My name is Mack and like to code things. I took my first
-              steps into web development in 2019, learning HTML and CSS. With
-              the small amount of knowledge I learned, I registered a domain and
-              <a
-                href="https://github.com/mackrusing/mackrusing.github.io/tree/e34465a56cfd279c10adcbb16e8fee9d203c9e87"
-                >created my first website</a
-              >. Soon after I dove into Python, and the basics of
-              object-oriented programming.
-            </p>
-            <p>Currently i'm focused on JavaScript and web development.</p>
-          </div>
-          <img />
-        </article>
-      </section>
+        <ul class="hero-social-buttons">
+          <li>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+        <div class="hero-cta-button">
+          <a href="#">View on GitHub <i class="fa-regular fa-folder"></i></a>
+        </div>
+      </div>
+
+      <!-- about section -->
+      <div class="about">
+        <h1>About</h1>
+        <h2>Stuff I'm working on</h2>
+        <ul>
+          <li>Taking AP Computer Science Principles</li>
+          <li>
+            Working on backend development in <code>.js</code> and
+            <code>.ts</code>
+          </li>
+          <li>Learning <code>.sh</code> scripting</li>
+          <li>Creating fun things with a Raspberry Pi</li>
+        </ul>
+        <h2>Development experience</h2>
+        <ul>
+          <li>
+            Knowlegde of <code>.py</code>, <code>.js</code>, <code>.ts</code>,
+            <code>.sh</code>, <code>.css</code>, <code>.html</code> (<a href="#"
+              >view certifications</a
+            >)
+          </li>
+          <li>Making stuff with Node.js, Express, Flask, Raspbery Pi</li>
+          <li>
+            Developing with Neovim, tmux, Zsh, iTerm, VS Code (<a href=""
+              >view dotfiles</a
+            >)
+          </li>
+        </ul>
+        <h2>Fun stuff</h2>
+        <ul>
+          <li>
+            Spending my free time playing video games, building mechanical
+            keyboards, and playing chess
+          </li>
+        </ul>
+      </div>
+
+      <!-- contact section -->
+      <div class="contact">
+        <h1>Contact</h1>
+        <p>
+          Send me an email at
+          <a href="#"><span class="email">mackrusing@gmail.com</span></a>
+        </p>
+        <p>
+          If you wish to contact me securly, find my PGP key
+          <a href="#">here</a>.
+        </p>
+      </div>
     </main>
+    <footer>
+      <p>Mack Rusing 2022. Site source on <a href="#">GitHub</a>.</p>
+    </footer>
   </body>
 </html>
