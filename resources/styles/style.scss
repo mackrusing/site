@@ -1,6 +1,9 @@
 // css reset
 @use 'reset';
 
+// other pages
+@use 'card';
+
 // fonts
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
@@ -15,6 +18,7 @@
   --cyan: #56b6c2;
   /* ui */
   --bg: #23272e;
+  --bg2: #292d36;
   --mid: #7d828c;
   --fg: #abb2bf;
 }
@@ -44,6 +48,19 @@ main {
   margin: 0 auto;
   padding: 0 20px;
   max-width: 890px;
+}
+
+a[role='link'] {
+  &:link,
+  &:visited {
+    color: var(--blue);
+    text-decoration: none;
+  }
+  &:hover,
+  &:active {
+    color: var(--magenta);
+    text-decoration: underline;
+  }
 }
 
 .hero {
@@ -81,4 +98,23 @@ main {
       align-items: center;
     }
   }
+}
+
+.icon-list {
+  li {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    // line-height: 1.6;
+    i {
+      width: 1em;
+      text-align: center;
+    }
+  }
+}
+
+footer {
+  margin: 30px 0;
+  padding: 0 10px;
+  text-align: center;
 }
