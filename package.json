@@ -8,7 +8,8 @@
   "scripts": {
     "test": "node test.js",
     "start": "node main.js",
-    "watch": "sass --watch scss/style.scss public/styles/style.css --no-source-map",
+    "watch": "npx sass --watch scss/style.scss public/styles/style.css --no-source-map",
+    "compile": "npx sass scss/style.scss public/styles/style.css && npx tsc",
     "fmt": "npx prettier --write ."
   },
   "homepage": "https://github.com/mackrusing/site#readme",
@@ -20,7 +21,9 @@
     "url": "https://github.com/mackrusing/site/issues"
   },
   "devDependencies": {
-    "prettier": "^2.6.2"
+    "prettier": "^2.6.2",
+    "sass": "^1.52.1",
+    "typescript": "^4.6.4"
   },
   "dependencies": {
     "express": "^4.18.1"
