@@ -131,3 +131,11 @@ textarea,
 select {
   font: inherit;
 }
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}

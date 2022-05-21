@@ -4,7 +4,7 @@
     <!-- metadata -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <base href="./" />
+    <!-- <base href="./" /> -->
 
     <!-- page info -->
     <title>Mack Rusing</title>
@@ -21,30 +21,41 @@
     <main>
       <!-- hero section -->
       <div class="hero">
-        <p>
+        <p class="hero-header">
           Hi, my name is Mack Rusing. I'm a web developer based in Phoenix, AZ.
         </p>
         <ul class="hero-social-buttons">
           <li>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a class="social-button" href="#"
+              ><i class="fa-brands fa-github"></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a class="social-button" href="#"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a class="social-button" href="#"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a class="social-button" href="#"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
           </li>
         </ul>
         <div class="hero-cta-button">
-          <a href="#">View on GitHub <i class="fa-regular fa-folder"></i></a>
+          <a class="cta-button" href="#">
+            <p>View on GitHub</p>
+            <i class="fa-regular fa-folder"></i>
+          </a>
         </div>
       </div>
 
       <!-- about section -->
-      <div class="about">
+      <section class="about">
         <h1>About</h1>
         <h2>Stuff I'm working on</h2>
         <ul>
@@ -60,17 +71,13 @@
         <ul>
           <li>
             Knowlegde of <code>.py</code>, <code>.js</code>, <code>.ts</code>,
-            <code>.sh</code>, <code>.css</code>, <code>.html</code> (<a
-              role="link"
-              href="#"
+            <code>.sh</code>, <code>.css</code>, <code>.html</code> (<a href="#"
               >view certifications</a
             >)
           </li>
           <li>Making stuff with Node.js, Express, Flask, Raspbery Pi</li>
           <li>
-            Developing with Neovim, tmux, Zsh, iTerm, VS Code (<a
-              role="link"
-              href=""
+            Developing with Neovim, tmux, Zsh, iTerm, VS Code (<a href=""
               >view dotfiles</a
             >)
           </li>
@@ -82,22 +89,20 @@
             keyboards, and playing chess
           </li>
         </ul>
-      </div>
+      </section>
 
       <!-- contact section -->
-      <div class="contact">
+      <section class="contact">
         <h1>Contact</h1>
         <p>
           Send me an email at
-          <a role="link" href="#"
-            ><span class="email">mackrusing@gmail.com</span></a
-          >
+          <a href="#"><span class="email">mackrusing@gmail.com</span></a>
         </p>
         <p>
           If you wish to contact me securly, find my PGP key
-          <a role="link" href="#">here</a>.
+          <a href="#">here</a>.
         </p>
-      </div>
+      </section>
     </main>
     <footer>
       <p>

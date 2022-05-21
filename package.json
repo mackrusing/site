@@ -1,0 +1,28 @@
+{
+  "name": "site",
+  "version": "0.1.0",
+  "author": "Mack Rusing",
+  "description": "Mack Rusing's portfolio site.",
+  "license": "MIT",
+  "main": "main.js",
+  "scripts": {
+    "test": "node test.js",
+    "start": "node main.js",
+    "watch": "sass --watch scss/style.scss public/styles/style.css --no-source-map",
+    "fmt": "npx prettier --write ."
+  },
+  "homepage": "https://github.com/mackrusing/site#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mackrusing/site.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mackrusing/site/issues"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.2"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
