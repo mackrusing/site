@@ -1,5 +1,5 @@
 // hero section
-.hero {
+.hero .container {
   // flex
   display: flex;
   flex-direction: column;
@@ -8,6 +8,9 @@
   // box
   height: 100vh;
   min-height: 600px;
+  @media (max-width: 700px) {
+    height: 85vh;
+  }
 
   .hero-header {
     font-size: 3em;
@@ -43,4 +46,8 @@
       align-items: center;
     }
   }
+}
+
+footer {
+  background: var(--bg2);
 }

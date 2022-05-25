@@ -52,10 +52,33 @@ a:not([class]) {
   }
 }
 
-// containers
+// dividers
+hr {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  border: none;
+  height: 1px;
+  background: var(--mid);
+  margin: 0;
+}
+
+// sections
 main {
+  & > section,
+  & > div {
+    // margin: 0 auto;
+    // padding-left: 20px;
+    // padding-right: 20px;
+    // max-width: 890px;
+  }
+}
+
+// content containers
+.container {
   margin: 0 auto;
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   max-width: 890px;
 }
 
@@ -67,17 +90,36 @@ footer {
 
 // section
 section {
+  // box
+  padding-top: 80px;
+  padding-bottom: 80px;
+  // text
+  line-height: 1.8;
+
   h1 {
-    font-size: 1.25em;
+    // box
+    margin-bottom: 25px;
+    // text
+    font-size: 1.75em;
     text-transform: lowercase;
     font-weight: bold;
     color: var(--green);
   }
 
   h2 {
+    // box
+    margin: 15px 0;
+    // text
+    font-size: 1.25em;
+    font-weight: bold;
   }
 
   h3 {
+  }
+
+  ul {
+    list-style: disc outside;
+    padding-left: 1em;
   }
 }
 

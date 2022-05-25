@@ -141,7 +141,7 @@ a:active {
   text-decoration: none;
 }
 
-.hero {
+.hero .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -149,20 +149,25 @@ a:active {
   height: 100vh;
   min-height: 600px;
 }
-.hero .hero-header {
+@media (max-width: 700px) {
+  .hero .container {
+    height: 85vh;
+  }
+}
+.hero .container .hero-header {
   font-size: 3em;
 }
 @media (max-width: 700px) {
-  .hero .hero-header {
+  .hero .container .hero-header {
     font-size: 2em;
   }
 }
-.hero .hero-social-buttons {
+.hero .container .hero-social-buttons {
   display: flex;
   gap: 20px;
   font-size: 1.5em;
 }
-.hero .hero-social-buttons li a {
+.hero .container .hero-social-buttons li a {
   display: flex;
   width: 50px;
   height: 50px;
@@ -171,7 +176,7 @@ a:active {
   justify-content: center;
   align-items: center;
 }
-.hero .hero-cta-button a {
+.hero .container .hero-cta-button a {
   display: flex;
   gap: 10px;
   width: 190px;
@@ -180,6 +185,10 @@ a:active {
   border-radius: 25px;
   justify-content: center;
   align-items: center;
+}
+
+footer {
+  background: var(--bg2);
 }
 
 .card-container {
@@ -273,9 +282,20 @@ a:not([class]):hover, a:not([class]):active {
   text-decoration: underline;
 }
 
-main {
+hr {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  border: none;
+  height: 1px;
+  background: var(--mid);
+  margin: 0;
+}
+
+.container {
   margin: 0 auto;
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   max-width: 890px;
 }
 
@@ -285,12 +305,28 @@ footer {
   text-align: center;
 }
 
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  line-height: 1.8;
+}
 section h1 {
-  font-size: 1.25em;
+  margin-bottom: 25px;
+  font-size: 1.75em;
   text-transform: lowercase;
   font-weight: bold;
   color: var(--green);
 }
+section h2 {
+  margin: 15px 0;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+section ul {
+  list-style: disc outside;
+  padding-left: 1em;
+}
+
 .icon-list li {
   display: flex;
   align-items: baseline;
