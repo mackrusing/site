@@ -11,7 +11,7 @@ const app = express();
 // static files
 app.use('/resources', express.static('public'));
 
-// handle get reqs
+// handle page reqs
 app
   .get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/html/home.html'));
@@ -19,6 +19,11 @@ app
   .get('/info', (req, res) => {
     res.sendFile(path.join(__dirname, '/html/info.html'));
   });
+
+// handle page icon
+app.get('/favicon.ico', (req, res) => {
+  res.sendFile(path.join(__dirname, '/public/images/favicon.ico'));
+});
 
 // not found
 app.use((req, res) => {
