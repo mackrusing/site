@@ -6,10 +6,11 @@
   "license": "MIT",
   "main": "main.js",
   "scripts": {
-    "test": "node test.js",
-    "start": "node main.js",
-    "watch": "npx sass --watch scss/style.scss public/styles/style.css --no-source-map",
-    "compile": "npx sass scss/style.scss public/styles/style.css && npx tsc",
+    "start": "node backend/main.js",
+    "test": "npx nodemon backend/main.js",
+    "watch-scss": "npx sass --watch frontend/sass/style.scss frontend/public/resources/styles/style.css --no-source-map",
+    "watch-ts": "npx tsc",
+    "compile": "npx sass frontend/sass/style.scss frontend/public/resources/styles/style.css --no-source-map && npx tsc",
     "fmt": "npx prettier --write ."
   },
   "homepage": "https://github.com/mackrusing/site#readme",
@@ -21,6 +22,7 @@
     "url": "https://github.com/mackrusing/site/issues"
   },
   "devDependencies": {
+    "nodemon": "^2.0.16",
     "prettier": "^2.6.2",
     "sass": "^1.52.1",
     "typescript": "^4.6.4"

@@ -6,5 +6,5 @@
     "preserveConstEnums": true,
     "sourceMap": true
   },
-  "files": ["typescript/index.ts"]
+  "files": ["frontend/typescript/index.ts"]
 }
