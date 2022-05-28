@@ -1,6 +1,9 @@
 // css reset
 @use 'reset';
 
+// fonts
+@use 'fonts';
+
 // pages
 @use 'home';
 @use 'card';
@@ -27,7 +30,8 @@
 // page defaults
 body {
   // text
-  font-family: 'Lato', sans-serif;
+  font-family: 'iA Writer Quattro';
+  font-weight: 500;
   font-size: 18px;
   text-rendering: optimizeSpeed;
   line-height: 1.5;

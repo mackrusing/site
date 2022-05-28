@@ -141,6 +141,16 @@ a:active {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: "iA Writer Quattro";
+  font-style: normal;
+  src: url(/resources/fonts/ia-writer-quattro.ttf);
+}
+@font-face {
+  font-family: "iA Writer Quattro";
+  font-style: italic;
+  src: url(/resources/fonts/ia-writer-quattro-italic.ttf);
+}
 .hero .container {
   display: flex;
   flex-direction: column;
@@ -264,7 +274,8 @@ footer {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "iA Writer Quattro";
+  font-weight: 500;
   font-size: 18px;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
