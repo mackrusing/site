@@ -8,10 +8,12 @@
   "scripts": {
     "start": "node backend/main.js",
     "test": "npx nodemon backend/main.js",
-    "watch-scss": "npx sass --watch frontend/sass/style.scss frontend/public/resources/styles/style.css --no-source-map",
-    "watch-ts": "npx tsc",
-    "compile": "npx sass frontend/sass/style.scss frontend/public/resources/styles/style.css --no-source-map && npx tsc",
-    "fmt": "npx prettier --write ."
+    "watch-scss": "scripts/watch-scss",
+    "watch-ts": "",
+    "compile": "scripts/compile",
+    "compile-scss": "scripts/compile-scss",
+    "compile-ts": "",
+    "fmt": "scripts/fmt"
   },
   "homepage": "https://github.com/mackrusing/site#readme",
   "repository": {

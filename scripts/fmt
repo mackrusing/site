@@ -1,0 +1,7 @@
+#!/usr/bin/env zsh
+
+config=".prettierrc"
+ignore=".prettierignore"
+
+# command
+npx prettier --config $config --ignore-path $ignore --write .

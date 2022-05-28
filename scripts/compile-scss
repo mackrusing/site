@@ -1,0 +1,10 @@
+#!/usr/bin/env zsh
+
+input="frontend/sass/style.scss"
+output="frontend/public/resources/styles/style.css"
+
+# feedback
+echo "Compiling $input -> $output"
+
+# command
+npx sass --no-source-map $input $output
