@@ -8,6 +8,9 @@
 @use 'home';
 @use 'card';
 
+// components
+@use 'header';
+
 // fonts
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
@@ -21,10 +24,10 @@
   --magenta: #c678dd;
   --cyan: #56b6c2;
   /* ui */
-  --bg: #23272e;
-  --bg2: #292d36;
-  --mid: #7d828c;
-  --fg: #abb2bf;
+  --bg: hsl(0, 0%, 8%);
+  --bg2: hsl(0, 0%, 12%);
+  --mid: hsla(0, 0%, 90%, 50%);
+  --fg: hsl(0, 0%, 90%);
 }
 
 // page defaults
@@ -32,7 +35,7 @@ body {
   // text
   font-family: 'iA Writer Quattro';
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   // box
@@ -81,9 +84,9 @@ main {
 // content containers
 .container {
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 890px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  max-width: calc(1000px + calc(3rem * 2));
 }
 
 footer {

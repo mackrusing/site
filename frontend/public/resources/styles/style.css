@@ -155,22 +155,20 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
-  height: 100vh;
-  min-height: 600px;
-}
-@media (max-width: 700px) {
-  .hero .container {
-    height: 85vh;
-  }
+  gap: 2.5rem;
+  margin-bottom: 5rem;
 }
 .hero .container .hero-header {
-  font-size: 3em;
+  font-size: 2em;
+  font-weight: 500;
 }
 @media (max-width: 700px) {
   .hero .container .hero-header {
-    font-size: 2em;
+    font-size: 1.5em;
   }
+}
+.hero .container .hero-header strong {
+  font-weight: 800;
 }
 .hero .container .hero-social-buttons {
   display: flex;
@@ -258,6 +256,18 @@ footer {
   width: 2em;
 }
 
+header {
+  font-size: 1.75em;
+}
+header .container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
 :root {
   /* colors */
   --red: #e06c75;
@@ -267,16 +277,16 @@ footer {
   --magenta: #c678dd;
   --cyan: #56b6c2;
   /* ui */
-  --bg: #23272e;
-  --bg2: #292d36;
-  --mid: #7d828c;
-  --fg: #abb2bf;
+  --bg: hsl(0, 0%, 8%);
+  --bg2: hsl(0, 0%, 12%);
+  --mid: hsla(0, 0%, 90%, 50%);
+  --fg: hsl(0, 0%, 90%);
 }
 
 body {
   font-family: "iA Writer Quattro";
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   min-height: 100vh;
@@ -305,9 +315,9 @@ hr {
 
 .container {
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 890px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  max-width: calc(1000px + 6rem);
 }
 
 footer {
