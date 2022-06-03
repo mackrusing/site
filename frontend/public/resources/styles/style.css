@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 *,
 *::before,
 *::after {
@@ -151,54 +150,16 @@ a:active {
   font-style: italic;
   src: url(/resources/fonts/ia-writer-quattro-italic.ttf);
 }
-.hero .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 2.5rem;
-  margin-bottom: 5rem;
+@font-face {
+  font-family: "iA Writer Mono";
+  font-style: normal;
+  src: url(/resources/fonts/ia-writer-mono.ttf);
 }
-.hero .container .hero-header {
-  font-size: 2em;
-  font-weight: 500;
+@font-face {
+  font-family: "iA Writer Mono";
+  font-style: italic;
+  src: url(/resources/fonts/ia-writer-mono-italic.ttf);
 }
-@media (max-width: 700px) {
-  .hero .container .hero-header {
-    font-size: 1.5em;
-  }
-}
-.hero .container .hero-header strong {
-  font-weight: 800;
-}
-.hero .container .hero-social-buttons {
-  display: flex;
-  gap: 20px;
-  font-size: 1.5em;
-}
-.hero .container .hero-social-buttons li a {
-  display: flex;
-  width: 50px;
-  height: 50px;
-  border: 2px solid var(--fg);
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-}
-.hero .container .hero-cta-button a {
-  display: flex;
-  gap: 10px;
-  width: 190px;
-  height: 50px;
-  border: 2px solid var(--fg);
-  border-radius: 25px;
-  justify-content: center;
-  align-items: center;
-}
-
-footer {
-  background: var(--bg2);
-}
-
 .card-container {
   display: flex;
   align-items: center;
@@ -235,7 +196,7 @@ footer {
 .card .pfp {
   max-width: 220px;
   max-height: 220px;
-  border: 4px solid var(--bg);
+  border: 0;
   border-radius: 50%;
   margin-bottom: 20px;
   align-self: center;
@@ -256,18 +217,6 @@ footer {
   width: 2em;
 }
 
-header {
-  font-size: 1.75em;
-}
-header .container {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 6rem;
-  margin-bottom: 3rem;
-}
-
 :root {
   /* colors */
   --red: #e06c75;
@@ -278,74 +227,70 @@ header .container {
   --cyan: #56b6c2;
   /* ui */
   --bg: hsl(0, 0%, 8%);
-  --bg2: hsl(0, 0%, 12%);
+  --bg2: hsla(0, 0%, 100%, 2.5%);
   --mid: hsla(0, 0%, 90%, 50%);
   --fg: hsl(0, 0%, 90%);
 }
 
 body {
   font-family: "iA Writer Quattro";
-  font-weight: 500;
-  font-size: 16px;
   text-rendering: optimizeSpeed;
+  font-weight: 500;
   line-height: 1.5;
   min-height: 100vh;
   color: var(--fg);
   background-color: var(--bg);
 }
 
-a:not([class]):link, a:not([class]):visited {
+a:not([class]):link, a:not([class]):visited,
+a.link:link,
+a.link:visited {
   color: var(--blue);
   text-decoration: none;
+  transition: color 0.5s;
 }
-a:not([class]):hover, a:not([class]):active {
+a:not([class]):hover, a:not([class]):active,
+a.link:hover,
+a.link:active {
   color: var(--magenta);
   text-decoration: underline;
+  transition: color 0.5s;
 }
 
-hr {
-  position: absolute;
-  left: 0;
-  width: 100vw;
-  border: none;
-  height: 1px;
-  background: var(--mid);
-  margin: 0;
+.invisible-link:hover, .invisible-link:active {
+  color: var(--blue);
+}
+.invisible-link:link, .invisible-link:visited, .invisible-link:hover, .invisible-link:active {
+  transition: color 0.5s;
 }
 
-.container {
-  margin: 0 auto;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  max-width: calc(1000px + 6rem);
+.link-arrow {
+  color: var(--blue);
+}
+.link-arrow:link, .link-arrow:visited, .link-arrow:hover, .link-arrow:active {
+  transition: color 0.5s;
 }
 
-footer {
-  margin: 30px 0;
-  padding: 0 10px;
-  text-align: center;
+strong {
+  font-weight: 800;
 }
 
-section {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  line-height: 1.8;
+em {
+  font-style: italic;
 }
-section h1 {
-  margin-bottom: 25px;
-  font-size: 1.75em;
-  text-transform: lowercase;
-  font-weight: bold;
-  color: var(--green);
+
+del,
+s {
+  text-decoration: line-through;
 }
-section h2 {
-  margin: 15px 0;
-  font-size: 1.25em;
-  font-weight: bold;
+
+mark {
+  background: var(--yellow);
+  color: var(--bg);
 }
-section ul {
-  list-style: disc outside;
-  padding-left: 1em;
+
+code {
+  font-family: "iA Writer Mono";
 }
 
 .icon-list li {

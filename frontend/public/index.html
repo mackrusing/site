@@ -1,77 +1,53 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en-us">
   <head>
     <!-- metadata -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="/" />
 
     <!-- page info -->
     <title>Mack Rusing</title>
     <meta name="description" content="This is the page description!" />
 
-    <!-- styling & icons -->
+    <!-- stylesheets -->
     <link href="resources/styles/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- font awesome icons -->
     <script
       src="https://kit.fontawesome.com/982bff74f4.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <main>
-      <!-- header -->
-      <header>
-        <div class="container">
-          <div class="head-left">
-            <p>mackrusing.com</p>
-          </div>
-          <div class="head-right">
-            <i class="fa-solid fa-sun"></i>
-          </div>
+    <!-- header & navigation -->
+    <header class="site-header">
+      <div class="container">
+        <div class="head-left">
+          <p>mackrusing</p>
         </div>
-      </header>
+        <div class="head-right">
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- main content -->
+    <main class="site-content">
       <!-- hero section -->
-      <div class="hero">
+      <section class="hero">
         <div class="container">
-          <p class="hero-header">
+          <p class="lead">
             <strong>Lorem ipsum dolor sit amet.</strong> consectetur adipiscing
             elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Sapien et ligula ullamcorper malesuada proin libero nunc.
             Posuere lorem ipsum dolor sit amet consectetur adipiscing elit duis.
             Libero nunc consequat interdum varius sit amet mattis vulputate.
           </p>
-          <ul class="hero-social-buttons">
-            <li>
-              <a class="social-button" href="#"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </li>
-            <li>
-              <a class="social-button" href="#"
-                ><i class="fa-brands fa-linkedin-in"></i
-              ></a>
-            </li>
-            <li>
-              <a class="social-button" href="#"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
-            </li>
-            <li>
-              <a class="social-button" href="#"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-            </li>
-          </ul>
-          <div class="hero-cta-button">
-            <a class="cta-button" href="#">
-              <p>View on GitHub</p>
-              <i class="fa-regular fa-folder"></i>
-            </a>
-          </div>
         </div>
-      </div>
-
-      <hr />
+      </section>
 
       <!-- about section -->
       <section class="about">
@@ -113,8 +89,6 @@
         </div>
       </section>
 
-      <hr />
-
       <!-- contact section -->
       <section class="contact">
         <div class="container">
@@ -129,13 +103,16 @@
           </p>
         </div>
       </section>
-
-      <hr />
     </main>
-    <footer>
+
+    <!-- footer -->
+    <footer class="site-footer">
       <div class="container">
         <p>
-          Mack Rusing 2022. Site source on <a role="link" href="#">GitHub</a>.
+          Mack Rusing 2022.
+          <a class="invisible-link" href="#"
+            >Site source on GitHub <span class="link-arrow">→</span></a
+          >.
         </p>
       </div>
     </footer>
