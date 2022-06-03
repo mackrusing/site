@@ -1,60 +1,82 @@
-// hero section
-.hero .container {
-  // flex
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 2.5rem;
-  // box
-  // height: 100vh;
-  // min-height: 600px;
-  @media (max-width: 700px) {
-    // height: 85vh;
-  }
-
-  margin-bottom: 5rem;
-
-  .hero-header {
-    font-size: 2em;
-    font-weight: 500;
-    @media (max-width: 700px) {
-      font-size: 1.5em;
-    }
-
-    strong {
-      font-weight: 800;
-    }
-  }
-
-  .hero-social-buttons {
+.site-header {
+  .container {
+    // flex
     display: flex;
-    gap: 20px;
-    font-size: 1.5em;
-    li a {
+    justify-content: space-between;
+    gap: 1rem;
+    // box
+    padding: 2rem inherit;
+    .head-right {
       display: flex;
-      width: 50px;
-      height: 50px;
-      border: 2px solid var(--fg);
-      border-radius: 50%;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-
-  .hero-cta-button {
-    a {
-      display: flex;
-      gap: 10px;
-      width: 190px;
-      height: 50px;
-      border: 2px solid var(--fg);
-      border-radius: 25px;
-      justify-content: center;
-      align-items: center;
+      gap: 0.5rem;
     }
   }
 }
 
-footer {
-  background: var(--bg2);
+.hero {
+  font-size: 1.25rem;
+  .container {
+    // padding: 100px inherit;
+  }
 }
+
+// // hero section
+// .hero .container {
+//   // flex
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   gap: 2.5rem;
+//   // box
+//   // height: 100vh;
+//   // min-height: 600px;
+//   @media (max-width: 700px) {
+//     // height: 85vh;
+//   }
+
+//   margin-bottom: 5rem;
+
+//   .hero-header {
+//     font-size: 2em;
+//     font-weight: 500;
+//     @media (max-width: 700px) {
+//       font-size: 1.5em;
+//     }
+
+//     strong {
+//       font-weight: 800;
+//     }
+//   }
+
+//   .hero-social-buttons {
+//     display: flex;
+//     gap: 20px;
+//     font-size: 1.5em;
+//     li a {
+//       display: flex;
+//       width: 50px;
+//       height: 50px;
+//       border: 2px solid var(--fg);
+//       border-radius: 50%;
+//       justify-content: center;
+//       align-items: center;
+//     }
+//   }
+
+//   .hero-cta-button {
+//     a {
+//       display: flex;
+//       gap: 10px;
+//       width: 190px;
+//       height: 50px;
+//       border: 2px solid var(--fg);
+//       border-radius: 25px;
+//       justify-content: center;
+//       align-items: center;
+//     }
+//   }
+// }
+
+// footer {
+//   background: var(--bg2);
+// }

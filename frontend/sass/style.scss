@@ -4,20 +4,16 @@
 // fonts
 @use 'fonts';
 
+// default styles
+@use 'defaults';
+@use 'components';
+
 // pages
-// @use 'home';
+@use 'home';
 @use 'card';
 
 // components
 // @use 'header';
-
-// fonts
-// @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
-// animations
-@mixin color-shift {
-  transition: color 0.5s;
-}
 
 // color variables
 :root {
@@ -35,7 +31,7 @@
   --fg: hsl(0, 0%, 90%);
 }
 
-// page defaults
+// site defaults
 body {
   // text
   font-family: 'iA Writer Quattro';
@@ -49,112 +45,26 @@ body {
   background-color: var(--bg);
 }
 
-// link
-a:not([class]),
-a.link {
-  &:link,
-  &:visited {
-    color: var(--blue);
-    text-decoration: none;
-    @include color-shift();
-  }
-  &:hover,
-  &:active {
-    color: var(--magenta);
-    text-decoration: underline;
-    @include color-shift();
-  }
-}
-
-// invisible link
-.invisible-link {
-  &:hover,
-  &:active {
-    color: var(--blue);
-  }
-
-  &:link,
-  &:visited,
-  &:hover,
-  &:active {
-    @include color-shift();
-  }
-}
-
-// link arrow icon
-.link-arrow {
-  // color
-  color: var(--blue);
-
-  &:link,
-  &:visited,
-  &:hover,
-  &:active {
-    @include color-shift();
-  }
-}
-
-// bold
-strong {
-  font-weight: 800;
-}
-
-// italic
-em {
-  font-style: italic;
-}
-
-// strikethrough
-del,
-s {
-  text-decoration: line-through;
-}
-
-// highlight
-mark {
-  background: var(--yellow);
-  color: var(--bg);
-}
-
-// inline code
-code {
-  font-family: 'iA Writer Mono';
-}
-
-// divider
-hr {
-  // position: absolute;
-  // left: 0;
-  // width: 100vw;
-  // border: none;
-  // height: 1px;
-  // background: var(--mid);
-  // margin: 0;
-}
-
-// sections
-main {
-  & > section,
-  & > div {
-    // margin: 0 auto;
-    // padding-left: 20px;
-    // padding-right: 20px;
-    // max-width: 890px;
-  }
-}
-
 // content container
 .container {
-  // margin: 0 auto;
-  // padding-left: 3rem;
-  // padding-right: 3rem;
-  // max-width: calc(1000px + calc(3rem * 2));
-}
-
-footer {
-  // margin: 30px 0;
-  // padding: 0 10px;
-  // text-align: center;
+  // default box
+  margin: 0 auto;
+  padding: 1rem 0;
+  // small box
+  max-width: calc(100% - calc(1.5rem * 2));
+  padding: inherit 1.5rem;
+  @media (min-width: 768px) {
+    max-width: calc(100% - calc(2rem * 2));
+    padding: inherit 2rem;
+  }
+  @media (min-width: 992px) {
+    max-width: calc(100% - calc(2.5rem * 2));
+    padding: inherit 2.5rem;
+  }
+  @media (min-width: 1200px) {
+    max-width: calc(1000px + calc(3rem * 2));
+    padding: inherit 3rem;
+  }
 }
 
 // // section
@@ -191,18 +101,3 @@ footer {
 //     padding-left: 1em;
 //   }
 // }
-
-// list 'bulleted' with icons
-.icon-list {
-  li {
-    // flex
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
-
-    i {
-      width: 1em;
-      text-align: center;
-    }
-  }
-}

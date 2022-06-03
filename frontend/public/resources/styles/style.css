@@ -160,6 +160,83 @@ a:active {
   font-style: italic;
   src: url(/resources/fonts/ia-writer-mono-italic.ttf);
 }
+strong {
+  font-weight: 800;
+}
+
+em {
+  font-style: italic;
+}
+
+del,
+s {
+  text-decoration: line-through;
+}
+
+ins,
+u {
+  text-decoration: underline;
+}
+
+mark {
+  background: var(--yellow);
+  color: var(--bg);
+}
+
+code {
+  font-family: "iA Writer Mono";
+}
+
+.muted {
+  color: var(--mid);
+}
+
+a:not([class]),
+.link {
+  color: var(--blue);
+  transition: color 0.5s;
+}
+a:not([class]):hover, a:not([class]):active,
+.link:hover,
+.link:active {
+  color: var(--magenta);
+}
+
+.invisible-link {
+  transition: color 0.5s;
+}
+.invisible-link:hover, .invisible-link:active {
+  color: var(--blue);
+}
+
+.static-link {
+  color: var(--blue);
+}
+
+ul.icon-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+ul.icon-list li i {
+  width: 1em;
+  text-align: center;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem inherit;
+}
+.site-header .container .head-right {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.hero {
+  font-size: 1.25rem;
+}
 .card-container {
   display: flex;
   align-items: center;
@@ -242,63 +319,27 @@ body {
   background-color: var(--bg);
 }
 
-a:not([class]):link, a:not([class]):visited,
-a.link:link,
-a.link:visited {
-  color: var(--blue);
-  text-decoration: none;
-  transition: color 0.5s;
+.container {
+  margin: 0 auto;
+  padding: 1rem 0;
+  max-width: calc(100% - 3rem);
+  padding: inherit 1.5rem;
 }
-a:not([class]):hover, a:not([class]):active,
-a.link:hover,
-a.link:active {
-  color: var(--magenta);
-  text-decoration: underline;
-  transition: color 0.5s;
+@media (min-width: 768px) {
+  .container {
+    max-width: calc(100% - 4rem);
+    padding: inherit 2rem;
+  }
 }
-
-.invisible-link:hover, .invisible-link:active {
-  color: var(--blue);
+@media (min-width: 992px) {
+  .container {
+    max-width: calc(100% - 5rem);
+    padding: inherit 2.5rem;
+  }
 }
-.invisible-link:link, .invisible-link:visited, .invisible-link:hover, .invisible-link:active {
-  transition: color 0.5s;
-}
-
-.link-arrow {
-  color: var(--blue);
-}
-.link-arrow:link, .link-arrow:visited, .link-arrow:hover, .link-arrow:active {
-  transition: color 0.5s;
-}
-
-strong {
-  font-weight: 800;
-}
-
-em {
-  font-style: italic;
-}
-
-del,
-s {
-  text-decoration: line-through;
-}
-
-mark {
-  background: var(--yellow);
-  color: var(--bg);
-}
-
-code {
-  font-family: "iA Writer Mono";
-}
-
-.icon-list li {
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-}
-.icon-list li i {
-  width: 1em;
-  text-align: center;
+@media (min-width: 1200px) {
+  .container {
+    max-width: calc(1000px + 6rem);
+    padding: inherit 3rem;
+  }
 }

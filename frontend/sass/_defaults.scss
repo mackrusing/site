@@ -1,0 +1,64 @@
+// bold
+strong {
+  font-weight: 800;
+}
+
+// italic
+em {
+  font-style: italic;
+}
+
+// strikethrough (deleted, inacurate)
+del,
+s {
+  text-decoration: line-through;
+}
+
+// underline (inserted, underlined)
+ins,
+u {
+  text-decoration: underline;
+}
+
+// highlight
+mark {
+  background: var(--yellow);
+  color: var(--bg);
+}
+
+// inline code
+code {
+  font-family: 'iA Writer Mono';
+}
+
+// muted text
+.muted {
+  color: var(--mid);
+}
+
+// link
+a:not([class]),
+.link {
+  color: var(--blue);
+  transition: color 0.5s;
+
+  &:hover,
+  &:active {
+    color: var(--magenta);
+  }
+}
+
+// invisible link
+.invisible-link {
+  transition: color 0.5s;
+
+  &:hover,
+  &:active {
+    color: var(--blue);
+  }
+}
+
+// static link
+.static-link {
+  color: var(--blue);
+}

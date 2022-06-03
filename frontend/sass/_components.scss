@@ -1,0 +1,14 @@
+// list bulleted with icons
+ul.icon-list {
+  li {
+    // flex
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+
+    i {
+      width: 1em;
+      text-align: center;
+    }
+  }
+}
