@@ -15,20 +15,35 @@
 // components
 // @use 'header';
 
-// color variables
+// variables
 :root {
-  /* colors */
+  // colors
   --red: #e06c75;
   --green: #98c379;
   --yellow: #e5c07b;
   --blue: #61afef;
   --magenta: #c678dd;
   --cyan: #56b6c2;
-  /* ui */
+
+  // ui
   --bg: hsl(0, 0%, 8%);
   --bg2: hsla(0, 0%, 100%, 2.5%);
   --mid: hsla(0, 0%, 90%, 50%);
   --fg: hsl(0, 0%, 90%);
+
+  // font sizes
+  --font-size-xs: 0.8rem; // 8px
+  --font-size-sm: 1.2rem; // 12px
+  --font-size-base: 1.6rem; // 16px
+  --font-size-md: 2rem; // 20px
+  --font-size-lg: 2.4rem; // 24px
+  --font-size-xl: 2.8rem; // 28px
+  --font-size-xxl: 3.2rem; // 32px
+  --font-size-xxxl: 3.6rem; // 36ox
+}
+
+html {
+  font-size: 62.5%;
 }
 
 // site defaults
@@ -36,6 +51,7 @@ body {
   // text
   font-family: 'iA Writer Quattro';
   text-rendering: optimizeSpeed;
+  font-size: var(--font-size-base);
   font-weight: 500;
   line-height: 1.5;
   // box
@@ -53,6 +69,10 @@ body {
   // small box
   max-width: calc(100% - calc(1.5rem * 2));
   padding: inherit 1.5rem;
+  @media (min-width: 576px) {
+    max-width: calc(100% - calc(1.5rem * 2));
+    padding: inherit 1.5rem;
+  }
   @media (min-width: 768px) {
     max-width: calc(100% - calc(2rem * 2));
     padding: inherit 2rem;

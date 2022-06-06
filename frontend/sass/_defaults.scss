@@ -60,5 +60,11 @@ a:not([class]),
 
 // static link
 .static-link {
-  color: var(--blue);
+  &,
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: var(--blue);
+  }
 }

@@ -14,8 +14,21 @@
 }
 
 .hero {
-  font-size: 1.25rem;
+  // font-size: var(--font-size-xl);
+  // @media (min-width: 576px) {
+  //   font-size: 1.5rem;
+  // }
+  // @media (min-width: 768px) {
+  //   font-size: 1.75rem;
+  // }
+  // @media (min-width: 992px) {
+  //   font-size: 2rem;
+  // }
+  // @media (min-width: 1200px) {
+  //   font-size: 2rem;
+  // }
   .container {
+    // font-size: 1.25em;
     // padding: 100px inherit;
   }
 }

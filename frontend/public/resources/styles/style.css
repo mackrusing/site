@@ -209,7 +209,7 @@ a:not([class]):hover, a:not([class]):active,
   color: var(--blue);
 }
 
-.static-link {
+.static-link, .static-link:link, .static-link:visited, .static-link:hover, .static-link:active {
   color: var(--blue);
 }
 
@@ -234,9 +234,6 @@ ul.icon-list li i {
   gap: 0.5rem;
 }
 
-.hero {
-  font-size: 1.25rem;
-}
 .card-container {
   display: flex;
   align-items: center;
@@ -295,23 +292,34 @@ ul.icon-list li i {
 }
 
 :root {
-  /* colors */
   --red: #e06c75;
   --green: #98c379;
   --yellow: #e5c07b;
   --blue: #61afef;
   --magenta: #c678dd;
   --cyan: #56b6c2;
-  /* ui */
   --bg: hsl(0, 0%, 8%);
   --bg2: hsla(0, 0%, 100%, 2.5%);
   --mid: hsla(0, 0%, 90%, 50%);
   --fg: hsl(0, 0%, 90%);
+  --font-size-xs: 0.8rem;
+  --font-size-sm: 1.2rem;
+  --font-size-base: 1.6rem;
+  --font-size-md: 2rem;
+  --font-size-lg: 2.4rem;
+  --font-size-xl: 2.8rem;
+  --font-size-xxl: 3.2rem;
+  --font-size-xxxl: 3.6rem;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
   font-family: "iA Writer Quattro";
   text-rendering: optimizeSpeed;
+  font-size: var(--font-size-base);
   font-weight: 500;
   line-height: 1.5;
   min-height: 100vh;
@@ -324,6 +332,12 @@ body {
   padding: 1rem 0;
   max-width: calc(100% - 3rem);
   padding: inherit 1.5rem;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: calc(100% - 3rem);
+    padding: inherit 1.5rem;
+  }
 }
 @media (min-width: 768px) {
   .container {
