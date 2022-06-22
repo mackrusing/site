@@ -32,14 +32,14 @@
   --fg: hsl(0, 0%, 90%);
 
   // font sizes
-  --font-size-xs: 0.8rem; // 8px
-  --font-size-sm: 1.2rem; // 12px
-  --font-size-base: 1.6rem; // 16px
-  --font-size-md: 2rem; // 20px
-  --font-size-lg: 2.4rem; // 24px
-  --font-size-xl: 2.8rem; // 28px
-  --font-size-xxl: 3.2rem; // 32px
-  --font-size-xxxl: 3.6rem; // 36ox
+  --font-size-base: 1.6rem;
+  --font-size-md: 1.8rem;
+  --font-size-lg: 2rem;
+  @media (min-width: 768px) {
+    --font-size-base: 1.8rem;
+    --font-size-md: 2rem;
+    --font-size-lg: 2.6rem;
+  }
 }
 
 html {
@@ -86,38 +86,3 @@ body {
     padding: inherit 3rem;
   }
 }
-
-// // section
-// section {
-//   // box
-//   padding-top: 80px;
-//   padding-bottom: 80px;
-//   // text
-//   line-height: 1.8;
-
-//   h1 {
-//     // box
-//     margin-bottom: 25px;
-//     // text
-//     font-size: 1.75em;
-//     text-transform: lowercase;
-//     font-weight: bold;
-//     color: var(--green);
-//   }
-
-//   h2 {
-//     // box
-//     margin: 15px 0;
-//     // text
-//     font-size: 1.25em;
-//     font-weight: bold;
-//   }
-
-//   h3 {
-//   }
-
-//   ul {
-//     list-style: disc outside;
-//     padding-left: 1em;
-//   }
-// }

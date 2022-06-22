@@ -1,3 +1,10 @@
+// heading 2
+h2 {
+  font-weight: 800;
+  font-size: var(--font-size-md);
+  color: var(--green);
+}
+
 // bold
 strong {
   font-weight: 800;
@@ -67,4 +74,9 @@ a:not([class]),
   &:active {
     color: var(--blue);
   }
+}
+
+// lead content
+.lead {
+  font-size: var(--font-size-lg);
 }

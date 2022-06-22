@@ -1,4 +1,6 @@
 .site-header {
+  padding: 3rem 0;
+  // font-size: ;
   .container {
     // flex
     display: flex;
@@ -30,6 +32,12 @@
   .container {
     // font-size: 1.25em;
     // padding: 100px inherit;
+  }
+}
+
+.about {
+  .container div {
+    padding: 1.5rem 0;
   }
 }
 
