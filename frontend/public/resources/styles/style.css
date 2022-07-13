@@ -111,7 +111,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -141,22 +141,22 @@ a:active {
 }
 
 @font-face {
-  font-family: "iA Writer Quattro";
+  font-family: 'iA Writer Quattro';
   font-style: normal;
   src: url(/resources/fonts/ia-writer-quattro.ttf);
 }
 @font-face {
-  font-family: "iA Writer Quattro";
+  font-family: 'iA Writer Quattro';
   font-style: italic;
   src: url(/resources/fonts/ia-writer-quattro-italic.ttf);
 }
 @font-face {
-  font-family: "iA Writer Mono";
+  font-family: 'iA Writer Mono';
   font-style: normal;
   src: url(/resources/fonts/ia-writer-mono.ttf);
 }
 @font-face {
-  font-family: "iA Writer Mono";
+  font-family: 'iA Writer Mono';
   font-style: italic;
   src: url(/resources/fonts/ia-writer-mono-italic.ttf);
 }
@@ -190,7 +190,7 @@ mark {
 }
 
 code {
-  font-family: "iA Writer Mono";
+  font-family: 'iA Writer Mono';
 }
 
 .muted {
@@ -202,7 +202,8 @@ a:not([class]),
   color: var(--blue);
   transition: color 0.5s;
 }
-a:not([class]):hover, a:not([class]):active,
+a:not([class]):hover,
+a:not([class]):active,
 .link:hover,
 .link:active {
   color: var(--magenta);
@@ -211,11 +212,16 @@ a:not([class]):hover, a:not([class]):active,
 .invisible-link {
   transition: color 0.5s;
 }
-.invisible-link:hover, .invisible-link:active {
+.invisible-link:hover,
+.invisible-link:active {
   color: var(--blue);
 }
 
-.static-link, .static-link:link, .static-link:visited, .static-link:hover, .static-link:active {
+.static-link,
+.static-link:link,
+.static-link:visited,
+.static-link:hover,
+.static-link:active {
   color: var(--blue);
 }
 
@@ -336,7 +342,7 @@ html {
 }
 
 body {
-  font-family: "iA Writer Quattro";
+  font-family: 'iA Writer Quattro';
   text-rendering: optimizeSpeed;
   font-size: var(--font-size-base);
   font-weight: 500;
