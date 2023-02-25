@@ -1,10 +1,12 @@
 // 100 thin
-// 200 extra light
+// 200 extra-light
 // 300 light
 // 400 regular
 // 500 medium
+// 600 semi-bold (doesn't exist for input)
 // 700 bold
-// 800 black
+// 800 extra-bold (doesn't exist for input)
+// 900 black
 
 // input sans
 @font-face {
@@ -19,6 +21,20 @@
     font-style: italic;
     font-weight: 400;
     src: url(/resources/fonts/InputSans/InputSans/InputSans-Italic.ttf);
+}
+
+@font-face {
+    font-family: "Input Sans";
+    font-style: normal;
+    font-weight: 900;
+    src: url(/resources/fonts/InputSans/InputSans/InputSans-Black.ttf);
+}
+
+@font-face {
+    font-family: "Input Sans";
+    font-style: italic;
+    font-weight: 900;
+    src: url(/resources/fonts/InputSans/InputSans/InputSans-BlackItalic.ttf);
 }
 
 // ibm plex sans

@@ -3,17 +3,120 @@
 @use "fonts";
 
 // variables
-:root {
-}
+// :root {}
+$fg-a: #e2e2e2;
+$bg-a: #1d1d1d;
+$accent1-a: #a3be8c; 
+$accent1-b: rgba($accent1-a, 0.8); 
+
+// 100 thin
+// 200 extra-light
+// 300 light
+// 400 regular
+// 500 medium
+// 600 semi-bold (doesn't exist for input)
+// 700 bold
+// 800 extra-bold (doesn't exist for input)
+// 900 black
+$thin: 100;
+$extra-light: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$black: 900;
+
+$font-base:  2.0rem;
+$font-l:     3.2rem;
+$font-xl:    4.8rem;
+$font-xxl:   6.4rem;
+
 
 // site defaults
 body {
     // text
     font-family: "Input Sans";
     text-rendering: optimizeLegibility;
-    font-size: 1.2rem;
+    font-size: $font-base;
     font-weight: 400;
-    line-height: 1;
+    line-height: 1.5;
     // box
     min-height: 100vh;
+    // colors
+    background: $bg-a;
+    color: $fg-a;
+}
+
+nav {
+    padding: 2.0rem 2.0rem;
+    margin: 2.0rem 1.0rem;
+    p {
+        a {
+            text-transform: uppercase;
+
+            // &:link, &:visited {
+            // 
+            // }
+
+            &:hover {
+                color: $accent1-a;
+            }
+            &:active {
+                color: $accent1-b;
+            }
+
+            &.current-page {
+                font-weight: $black;
+            }
+            // &.page {
+            //     font-weight: $regular;
+            // }
+        }
+    }
+}
+
+main {
+    padding: 0 2.0rem;
+    margin: 0 1.0rem;
+
+    h1 {
+        font-family: "IBM Plex Sans";
+        font-weight: $bold;
+        font-size: $font-xl;
+        margin: 10.0rem 0 12.5rem 0;
+
+        &.hero {
+            font-size: $font-xxl;
+        }
+    }
+    h2 {
+        font-family: "IBM Plex Sans";
+        font-weight: $semi-bold;
+        font-size: $font-l;
+        margin: 5.0rem 0 4.0rem 0;
+    }
+
+    p {
+        max-width: 80.0rem;
+        margin: 3.5rem 0;
+    }
+
+    em {
+        font-style: italic;
+    }
+}
+
+.inline-link {
+    &:link, &:visited, &:hover, &:active {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+    }
+
+    &:hover {
+        color: $accent1-a;
+    }
+    &:active {
+        color: $accent1-b
+    }
 }
