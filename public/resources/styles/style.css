@@ -185,7 +185,7 @@ nav {
   margin: 2rem 1rem;
 }
 nav p a {
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 nav p a:hover {
   color: #a3be8c;
@@ -200,9 +200,12 @@ nav p a.current-page {
 main {
   padding: 0 2rem;
   margin: 0 1rem;
+  max-width: 80rem;
+}
+main h1, main h2, main h3, main h4, main h5, main h6 {
+  font-family: "IBM Plex Sans", sans-serif;
 }
 main h1 {
-  font-family: "IBM Plex Sans";
   font-weight: 700;
   font-size: 4.8rem;
   margin: 10rem 0 12.5rem 0;
@@ -211,28 +214,49 @@ main h1.hero {
   font-size: 6.4rem;
 }
 main h2 {
-  font-family: "IBM Plex Sans";
-  font-weight: 600;
+  font-weight: 700;
   font-size: 3.2rem;
-  margin: 5rem 0 4rem 0;
+  margin: 7.5rem 0 4rem 0;
 }
 main p {
-  max-width: 80rem;
   margin: 3.5rem 0;
 }
-main em {
+main ul {
+  margin-left: 3.2rem;
+  line-height: 1.75;
+  list-style-position: outside;
+  list-style-type: disc;
+}
+main code.block-code {
+  display: block;
+  padding: 1.5rem;
+  overflow: scroll;
+  background-color: #292929;
+  font-family: monospace;
+  white-space: pre;
+}
+main em.dev-tool {
   font-style: italic;
 }
-
-.inline-link:link, .inline-link:visited, .inline-link:hover, .inline-link:active {
+main em.pronouns {
+  font-style: italic;
+}
+main em.school-course {
+  font-style: italic;
+}
+main a.inline-link:link, main a.inline-link:visited, main a.inline-link:hover, main a.inline-link:active {
   text-decoration: underline;
   text-decoration-thickness: 2px;
 }
-.inline-link:hover {
+main a.inline-link:hover {
   color: #a3be8c;
 }
-.inline-link:active {
+main a.inline-link:active {
   color: rgba(163, 190, 140, 0.8);
+}
+main code.inline-code {
+  color: rgba(226, 226, 226, 0.8);
+  font-family: monospace;
 }
 
 /*# sourceMappingURL=style.css.map */
