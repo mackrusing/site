@@ -14,11 +14,23 @@ app.set("views", "./views");
 // static files
 app.use("/resources", express.static("./resources"));
 
-app.get("/", (request, response) => {
-    response.render("home", {});
+// rendered pages
+app.get("/", (req, res) => {
+    res.render("home", {});
 });
-app.get("/about", (request, response) => {
-    response.render("about", {});
+app.get("/home", (req, res) => {
+    res.redirect("/");
+});
+app.get("/~", (req, res) => {
+    res.redirect("/");
+});
+app.get("/about", (req, res) => {
+    res.render("about", {});
+});
+
+// error pages
+app.all("*", (req, res) => {
+    res.status(404).render("404", {});
 });
 
 // launch server

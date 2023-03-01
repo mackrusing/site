@@ -22,14 +22,35 @@ $font-weight-bold:         700; // input ibm
 $font-weight-extra-bold:   800; // 
 $font-weight-black:        900; // input
 
-$font-size-base:  2.0rem;
-$font-size-l:     3.2rem;
-$font-size-xl:    4.8rem;
-$font-size-xxl:   6.4rem;
+// $font-size-s:     1.6rem;
+// $font-size-base:  2.0rem;
+// $font-size-l:     3.2rem;
+// $font-size-xl:    4.8rem;
+// $font-size-xxl:   6.4rem;
 
 $font-families-header: "IBM Plex Sans", sans-serif;
 $font-families-body: "Input Sans", sans-serif;
 $font-families-mono: "Input Mono", monospace;
+
+:root {
+    --font-size-s:     1.6rem;
+    --font-size-base:  1.6rem;
+    --font-size-l:     2.8rem;
+    --font-size-xl:    4.2rem;
+    --font-size-xxl:   4.8rem;
+    @media (min-width: 900px) {
+        --font-size-s:     1.6rem;
+        --font-size-base:  2.0rem;
+        --font-size-l:     3.2rem;
+        --font-size-xl:    4.8rem;
+        --font-size-xxl:   6.4rem;
+    }
+
+    --page-padding: 2.0rem;
+    @media (min-width: 900px) {
+        --page-padding: 3.2rem;
+    }
+}
 
 html {
     scroll-behavior: smooth;
@@ -39,7 +60,7 @@ body {
     // text
     font-family: $font-families-body;
     text-rendering: optimizeLegibility;
-    font-size: $font-size-base;
+    font-size: var(--font-size-base);
     font-weight: 400;
     line-height: 1.5;
     // box
@@ -96,18 +117,18 @@ main {
     h1 {
         // text
         font-weight: $font-weight-bold;
-        font-size: $font-size-xl;
+        font-size: var(--font-size-xl);
         // box
         margin: 10.0rem 0 12.5rem 0;
 
         &.hero {
-            font-size: $font-size-xxl;
+            font-size: var(--font-size-xxl);
         }
     }
     h2 {
         // font
         font-weight: $font-weight-bold;
-        font-size: $font-size-l;
+        font-size: var(--font-size-l);
         // box
         margin: 7.5rem 0 4.0rem 0;
     }
@@ -173,11 +194,18 @@ main {
     }
 }
 
-// main.home-page {
-//     min-height: 80vh;
+// div.home-page {
+//     min-height: 100vh;
 // }
 
-// footer {
-//     background: $color-bg-t1;
-// }
-
+footer {
+    text-align: center;
+    padding: 3.6rem 2.0rem;
+    margin: 0 auto;
+    max-width: 80.0rem;
+    hr {
+        margin-bottom: 3.2rem;
+        height: 1px;
+        color: $color-fg-s1;
+    }
+}
