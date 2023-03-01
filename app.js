@@ -24,8 +24,13 @@ app.get("/home", (req, res) => {
 app.get("/~", (req, res) => {
     res.redirect("/");
 });
+
 app.get("/about", (req, res) => {
     res.render("about", {});
+});
+
+app.get("/git", (req, res) => {
+    res.redirect("https://github.com/mackrusing?tab=repositories");
 });
 
 // error pages

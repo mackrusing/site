@@ -8,7 +8,7 @@
     "scripts": {
         "start": "node app.js",
         "test": "npx nodemon app.js",
-        "build": "npx sass sass/:public/resources/styles/",
+        "build": "npx sass sass/:resources/styles/",
         "watch": "npx sass --watch sass/:resources/styles/"
     },
     "homepage": "https://github.com/mackrusing/site#readme",

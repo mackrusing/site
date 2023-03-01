@@ -169,6 +169,18 @@ html {
   font-weight: 900;
   src: url(/resources/fonts/InputSans/InputSans/InputSans-BlackItalic.ttf);
 }
+@font-face {
+  font-family: "Input Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/resources/fonts/InputMono/InputMono/InputMono-Regular.ttf);
+}
+@font-face {
+  font-family: "Input Mono";
+  font-style: italic;
+  font-weight: 400;
+  src: url(/resources/fonts/InputMono/InputMono/InputMono-Italic.ttf);
+}
 :root {
   --font-size-s: 1.6rem;
   --font-size-base: 1.6rem;
@@ -264,7 +276,8 @@ main code.block-code {
   display: block;
   padding: 1.5rem;
   background-color: #292929;
-  font-family: monospace;
+  font-family: "Input Mono", monospace;
+  font-weight: 400;
 }
 main code.block-code p {
   margin: 0;
@@ -293,7 +306,8 @@ main a.inline-link:active {
 }
 main code.inline-code {
   color: rgba(226, 226, 226, 0.8);
-  font-family: monospace;
+  font-family: "Input Mono", monospace;
+  font-weight: 400;
 }
 
 footer {
