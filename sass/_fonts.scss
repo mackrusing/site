@@ -15,7 +15,6 @@
     font-weight: 400;
     src: url(/resources/fonts/InputSans/InputSans/InputSans-Regular.ttf);
 }
-
 @font-face {
     font-family: "Input Sans";
     font-style: italic;
@@ -29,12 +28,25 @@
     font-weight: 900;
     src: url(/resources/fonts/InputSans/InputSans/InputSans-Black.ttf);
 }
-
 @font-face {
     font-family: "Input Sans";
     font-style: italic;
     font-weight: 900;
     src: url(/resources/fonts/InputSans/InputSans/InputSans-BlackItalic.ttf);
+}
+
+// input mono
+@font-face {
+    font-family: "Input Mono";
+    font-style: normal;
+    font-weight: 400;
+    src: url(/resources/fonts/InputMono/InputMono/InputMono-Regular.ttf);
+}
+@font-face {
+    font-family: "Input Mono";
+    font-style: italic;
+    font-weight: 400;
+    src: url(/resources/fonts/InputMono/InputMono/InputMono-Italic.ttf);
 }
 
 // ibm plex sans

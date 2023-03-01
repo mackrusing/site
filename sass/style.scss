@@ -12,15 +12,15 @@ $color-accent1: #a3be8c;
 $color-accent1-s1: rgba($color-accent1, 0.8); 
 $color-accent2: #bf616a;
 
-$font-weight-thin:         100; // input ibm
-$font-weight-extra-light:  200; // input ibm
-$font-weight-light:        300; // input ibm
-$font-weight-regular:      400; // input ibm
-$font-weight-medium:       500; // input ibm
-$font-weight-semi-bold:    600; //       ibm
-$font-weight-bold:         700; // input ibm
+$font-weight-thin:         100; // input-sans* input-mono* ibm
+$font-weight-extra-light:  200; // input-sans* input-mono* ibm
+$font-weight-light:        300; // input-sans* input-mono* ibm
+$font-weight-regular:      400; // input-sans  input-mono  ibm
+$font-weight-medium:       500; // input-sans* input-mono* ibm
+$font-weight-semi-bold:    600; //                         ibm
+$font-weight-bold:         700; // input-sans* input-mono* ibm
 $font-weight-extra-bold:   800; // 
-$font-weight-black:        900; // input
+$font-weight-black:        900; // input-sans  input-mono*
 
 // $font-size-s:     1.6rem;
 // $font-size-base:  2.0rem;
@@ -153,7 +153,8 @@ main {
         // max-width: 50.0rem;
         // overflow: scroll;
         background-color: $color-bg-t1;
-        font-family: monospace;
+        font-family: $font-families-mono;
+        font-weight: $font-weight-regular;
         // white-space: nowrap;
         p {
             margin: 0;
@@ -190,7 +191,8 @@ main {
         // background: $bg-b;
         // color: $accent2-a;
         color: $color-fg-s1;
-        font-family: monospace;
+        font-family: $font-families-mono;
+        font-weight: $font-weight-regular;
     }
 }
 
