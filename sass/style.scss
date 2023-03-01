@@ -3,57 +3,61 @@
 @use "fonts";
 
 // variables
-// :root {}
-$fg-a: #e2e2e2;
-$fg-b: rgba($fg-a, 0.8);
-$bg-a: #1d1d1d;
-$bg-b: #292929;
-$accent1-a: #a3be8c; 
-$accent1-b: rgba($accent1-a, 0.8); 
-$accent2-a: #bf616a;
+$color-fg: #e2e2e2;
+$color-fg-s1: rgba($color-fg, 0.8);
+$color-bg: #1d1d1d;
+$color-bg-t1: #292929;
 
-// 100 thin
-// 200 extra-light
-// 300 light
-// 400 regular
-// 500 medium
-// 600 semi-bold (doesn't exist for input)
-// 700 bold
-// 800 extra-bold (doesn't exist for input)
-// 900 black
-$thin: 100;
-$extra-light: 200;
-$light: 300;
-$regular: 400;
-$medium: 500;
-$semi-bold: 600;
-$bold: 700;
-$black: 900;
+$color-accent1: #a3be8c; 
+$color-accent1-s1: rgba($color-accent1, 0.8); 
+$color-accent2: #bf616a;
 
-$font-base:  2.0rem;
-$font-l:     3.2rem;
-$font-xl:    4.8rem;
-$font-xxl:   6.4rem;
+$font-weight-thin:         100; // input ibm
+$font-weight-extra-light:  200; // input ibm
+$font-weight-light:        300; // input ibm
+$font-weight-regular:      400; // input ibm
+$font-weight-medium:       500; // input ibm
+$font-weight-semi-bold:    600; //       ibm
+$font-weight-bold:         700; // input ibm
+$font-weight-extra-bold:   800; // 
+$font-weight-black:        900; // input
+
+$font-size-base:  2.0rem;
+$font-size-l:     3.2rem;
+$font-size-xl:    4.8rem;
+$font-size-xxl:   6.4rem;
+
+$font-families-header: "IBM Plex Sans", sans-serif;
+$font-families-body: "Input Sans", sans-serif;
+$font-families-mono: "Input Mono", monospace;
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     // text
-    font-family: "Input Sans";
+    font-family: $font-families-body;
     text-rendering: optimizeLegibility;
-    font-size: $font-base;
+    font-size: $font-size-base;
     font-weight: 400;
     line-height: 1.5;
     // box
     min-height: 100vh;
     // colors
-    background: $bg-a;
-    color: $fg-a;
+    background: $color-bg;
+    color: $color-fg;
 }
 
 nav {
     // box
-    padding: 2.0rem 2.0rem;
-    margin: 2.0rem 1.0rem;
+    padding: 4.0rem 2.0rem;
+    margin: 0 auto;
+    max-width: 80.0rem;
     p {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
         a {
             // text
             text-transform: lowercase;
@@ -63,14 +67,14 @@ nav {
             // }
 
             &:hover {
-                color: $accent1-a;
+                color: $color-accent1;
             }
             &:active {
-                color: $accent1-b;
+                color: $color-accent1-s1;
             }
 
             &.current-page {
-                font-weight: $black;
+                font-weight: $font-weight-black;
             }
             // &.page {
             //     font-weight: $regular;
@@ -82,28 +86,28 @@ nav {
 main {
     // box
     padding: 0 2.0rem;
-    margin: 0 1.0rem;
+    margin: 0 auto;
     max-width: 80.0rem;
 
     // headings
     h1, h2, h3, h4, h5, h6 {
-        font-family: "IBM Plex Sans", sans-serif;
+        font-family: $font-families-header;
     }
     h1 {
         // text
-        font-weight: $bold;
-        font-size: $font-xl;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-xl;
         // box
         margin: 10.0rem 0 12.5rem 0;
 
         &.hero {
-            font-size: $font-xxl;
+            font-size: $font-size-xxl;
         }
     }
     h2 {
         // font
-        font-weight: $bold;
-        font-size: $font-l;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-l;
         // box
         margin: 7.5rem 0 4.0rem 0;
     }
@@ -126,10 +130,16 @@ main {
         padding: 1.5rem;
         // max-width: 80%;
         // max-width: 50.0rem;
-        overflow: scroll;
-        background-color: $bg-b;
+        // overflow: scroll;
+        background-color: $color-bg-t1;
         font-family: monospace;
-        white-space: pre;
+        // white-space: nowrap;
+        p {
+            margin: 0;
+            overflow: scroll;
+            scrollbar-width: none;
+            white-space: pre;
+        }
     }
 
     // inline elements
@@ -149,18 +159,25 @@ main {
         }
     
         &:hover {
-            color: $accent1-a;
+            color: $color-accent1;
         }
         &:active {
-            color: $accent1-b;
+            color: $color-accent1-s1;
         }
     }
     code.inline-code {
         // background: $bg-b;
         // color: $accent2-a;
-        color: $fg-b;
+        color: $color-fg-s1;
         font-family: monospace;
     }
 }
 
+// main.home-page {
+//     min-height: 80vh;
+// }
+
+// footer {
+//     background: $color-bg-t1;
+// }
 

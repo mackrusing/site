@@ -1,0 +1,135 @@
+html(lang="en-us")
+    head
+        //- metadata
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        base(href="/")
+
+        //- page info
+        title mackrusing
+
+        //- stylesheets
+        link(href="/resources/styles/style.css", rel="stylesheet", type="text/css")
+    body
+        nav 
+            p 
+                a.page(href="/") ~
+                a.page(href="/git") git
+                a.current-page(href="/about") about
+        main
+            h1 About 
+
+            //- summary
+            p 
+                | Welcome! My name is Mack Rusing, and I am a web & software
+                | developer. I primarily work on backend projects using
+                | TypeScript and JavaScript, but I also have experience with
+                | Python, Sass, and CSS. Currently, I am learning Java for my
+                |
+                em.school-course AP Computer Science A
+                | 
+                | class, and Rust as a side project.
+            p 
+                | I am constantly working on new stuff, most of which you can
+                | find
+                | 
+                a.inline-link(href="/git") here →
+            p 
+                em.pronouns I use he/him pronouns.
+            
+            //- language fluency
+            h2 Language fluency
+            ul
+                li
+                    code.inline-code .ts 
+                    | ,
+                    |
+                    code.inline-code .js 
+                    | 
+                    | - full-stack web apps & api development with
+                    | 
+                    em.dev-tool Express
+                li 
+                    code.inline-code .py 
+                    |
+                    | - small command-line scripts, web apps with
+                    | 
+                    em.dev-tool Flask
+                li 
+                    code.inline-code .rs 
+                    | 
+                    | - command-line applications, web apps with 
+                    em.dev-tool Rocket
+                li
+                    code.inline-code .java 
+                    | application development for
+                    | 
+                    em.school-course AP Computer Science A
+                li 
+                    code.inline-code .scss
+                    | ,
+                    | 
+                    code.inline-code .css 
+                    | 
+                    | - webpage styling
+
+            //- personal stack
+            h2 Personal Stack
+            p 
+                | Here is a brief overview of the visual & cli applications in 
+                | my workflow.
+            ul 
+                li 
+                    a.inline-link(href="") alacritty
+                    | 
+                    | - fast, cross-platform terminal emulator
+                li 
+                    a.inline-link(href="") homebrew
+                    | 
+                    | - package manager for macOS 
+                li 
+                    a.inline-link(href="") fish
+                    | 
+                    | - user-friendly command-line shell for unix-like operating
+                    | systems 
+                li 
+                    a.inline-link(href="") tmux
+                    | 
+                    | - terminal multiplexer 
+                li 
+                    a.inline-link(href="") neovim
+                    | 
+                    | - agile and extensible text editor (vim-fork)
+                    ul 
+                        li 
+                            a.inline-link(href="") astronvim 
+                            | 
+                            | - asthetic and feature-rich neovim config
+                li 
+                    a.inline-link(href="") visual-studio-code
+                    | 
+                    | - open-source code editor
+            p 
+                | For a full overview of my daily driver, including configs, 
+                | check out my
+                | 
+                a.inline-link(href="https://github.com/mackrusing/dotfiles") dotfiles repo →
+            
+            //- contact
+            h2 Contact me 
+            p 
+                | Want to reach out? Send me an email at 
+                | 
+                a.inline-link(href="mailto:dev@mackrusing.com") dev@mackrusing.com
+                | . My email is hosted by Proton Mail and more info on my GPG
+                | key is
+                | 
+                a.inline-link(href="/about#public-key") below ↓
+
+            //- key
+            h2#public-key Public key & fingerprint 
+            code.block-code 
+                p 1A2D 0E8B 2113 2F78 5481 CC53 E8D5 BCB2 793E D3B1
+            p 
+                a.inline-link(href="/resources/mackrusing.asc", download) Download my public key →
+

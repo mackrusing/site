@@ -169,8 +169,12 @@ html {
   font-weight: 900;
   src: url(/resources/fonts/InputSans/InputSans/InputSans-BlackItalic.ttf);
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "Input Sans";
+  font-family: "Input Sans", sans-serif;
   text-rendering: optimizeLegibility;
   font-size: 2rem;
   font-weight: 400;
@@ -181,8 +185,14 @@ body {
 }
 
 nav {
-  padding: 2rem 2rem;
-  margin: 2rem 1rem;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  max-width: 80rem;
+}
+nav p {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
 }
 nav p a {
   text-transform: lowercase;
@@ -199,7 +209,7 @@ nav p a.current-page {
 
 main {
   padding: 0 2rem;
-  margin: 0 1rem;
+  margin: 0 auto;
   max-width: 80rem;
 }
 main h1, main h2, main h3, main h4, main h5, main h6 {
@@ -230,9 +240,13 @@ main ul {
 main code.block-code {
   display: block;
   padding: 1.5rem;
-  overflow: scroll;
   background-color: #292929;
   font-family: monospace;
+}
+main code.block-code p {
+  margin: 0;
+  overflow: scroll;
+  scrollbar-width: none;
   white-space: pre;
 }
 main em.dev-tool {
