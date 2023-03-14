@@ -1,0 +1,227 @@
+// defaults
+@use "reset";
+@use "fonts";
+
+// variables
+$color-fg: #e2e2e2;
+$color-fg-s1: rgba($color-fg, 0.8);
+$color-bg: #1d1d1d;
+$color-bg-t1: #292929;
+
+$color-accent1: #a3be8c; 
+$color-accent1-s1: rgba($color-accent1, 0.8); 
+$color-accent2: #bf616a;
+
+$font-weight-thin:         100; // input-sans* input-mono* ibm
+$font-weight-extra-light:  200; // input-sans* input-mono* ibm
+$font-weight-light:        300; // input-sans* input-mono* ibm
+$font-weight-regular:      400; // input-sans  input-mono  ibm
+$font-weight-medium:       500; // input-sans* input-mono* ibm
+$font-weight-semi-bold:    600; //                         ibm
+$font-weight-bold:         700; // input-sans* input-mono* ibm
+$font-weight-extra-bold:   800; // 
+$font-weight-black:        900; // input-sans  input-mono*
+
+// $font-size-s:     1.6rem;
+// $font-size-base:  2.0rem;
+// $font-size-l:     3.2rem;
+// $font-size-xl:    4.8rem;
+// $font-size-xxl:   6.4rem;
+
+$font-families-header: "IBM Plex Sans", sans-serif;
+$font-families-body: "Input Sans", sans-serif;
+$font-families-mono: "Input Mono", monospace;
+
+:root {
+    --font-size-s:     1.6rem;
+    --font-size-base:  1.8rem;
+    --font-size-l:     2.8rem;
+    --font-size-xl:    4.2rem;
+    --font-size-xxl:   4.8rem;
+    @media (min-width: 900px) {
+        --font-size-s:     1.6rem;
+        --font-size-base:  2.0rem;
+        --font-size-l:     3.2rem;
+        --font-size-xl:    4.8rem;
+        --font-size-xxl:   6.4rem;
+    }
+
+    --page-padding: 2.0rem;
+    @media (min-width: 900px) {
+        --page-padding: 3.2rem;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    // text
+    font-family: $font-families-body;
+    text-rendering: optimizeLegibility;
+    font-size: var(--font-size-base);
+    font-weight: 400;
+    line-height: 1.5;
+    // box
+    min-height: 100vh;
+    // colors
+    background: $color-bg;
+    color: $color-fg;
+}
+
+nav {
+    // box
+    padding: 4.0rem 3.0rem;
+    margin: 0 auto;
+    max-width: 80.0rem;
+    p {
+        display: flex;
+        flex-direction: row;
+        gap: 1.0rem;
+        a {
+            // text
+            text-transform: lowercase;
+
+            // &:link, &:visited {
+            // 
+            // }
+
+            &:hover {
+                color: $color-accent1;
+            }
+            &:active {
+                color: $color-accent1-s1;
+            }
+
+            &.current-page {
+                font-weight: $font-weight-black;
+            }
+            // &.page {
+            //     font-weight: $regular;
+            // }
+        }
+    }
+}
+
+main {
+    // box
+    padding: 0 3.0rem;
+    margin: 0 auto;
+    max-width: 80.0rem;
+
+    // headings
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $font-families-header;
+    }
+    h1 {
+        // text
+        font-weight: $font-weight-bold;
+        font-size: var(--font-size-xl);
+        // box
+        margin: 10.0rem 0 12.5rem 0;
+
+        &.hero {
+            font-size: var(--font-size-xxl);
+        }
+    }
+    h2 {
+        // font
+        font-weight: $font-weight-bold;
+        font-size: var(--font-size-l);
+        // box
+        margin: 7.5rem 0 4.0rem 0;
+    }
+
+    // box elements
+    p {
+        margin: 3.5rem 0;
+    }
+    ul {
+        margin-left: 3.2rem;
+        line-height: 1.75;
+        list-style-position: outside;
+        list-style-type: disc;
+        // li::before {
+        //     content: "• ";
+        // }
+    }
+    code.block-code {
+        display: block;
+        padding: 1.5rem;
+        // max-width: 80%;
+        // max-width: 50.0rem;
+        // overflow: scroll;
+        background-color: $color-bg-t1;
+        font-family: $font-families-mono;
+        font-weight: $font-weight-regular;
+        // white-space: nowrap;
+        p {
+            margin: 0;
+            overflow: scroll;
+            scrollbar-width: none;
+            white-space: pre;
+        }
+    }
+
+    // inline elements
+    em.dev-tool {
+        font-style: italic;
+    }
+    em.pronouns {
+        font-style: italic;
+    }
+    em.school-course {
+        font-style: italic;
+    }
+    a.inline-link {
+        &:link, &:visited, &:hover, &:active {
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+        }
+    
+        &:hover {
+            color: $color-accent1;
+        }
+        &:active {
+            color: $color-accent1-s1;
+        }
+    }
+    code.inline-code {
+        // background: $bg-b;
+        // color: $accent2-a;
+        color: $color-fg-s1;
+        font-family: $font-families-mono;
+        font-weight: $font-weight-regular;
+    }
+}
+
+// div.home-page {
+//     min-height: 100vh;
+// }
+
+footer {
+    text-align: center;
+    padding: 3.6rem 2.0rem;
+    margin: 0 auto;
+    max-width: 80.0rem;
+    hr {
+        margin-top: 3.2rem;
+        margin-bottom: 3.2rem;
+        height: 1px;
+        color: $color-fg-s1;
+    }
+    a.inline-link {
+        // &:link, &:visited, &:hover, &:active {
+        //     text-decoration: underline;
+        //     text-decoration-thickness: 2px;
+        // }
+    
+        &:hover {
+            color: $color-accent1;
+        }
+        &:active {
+            color: $color-accent1-s1;
+        }
+    }
+}
