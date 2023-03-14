@@ -33,6 +33,10 @@ app.get("/git", (req, res) => {
     res.redirect("https://github.com/mackrusing?tab=repositories");
 });
 
+app.get("/src", (req, res) => {
+    res.redirect("https://github.com/mackrusing/site");
+});
+
 // error pages
 app.all("*", (req, res) => {
     res.status(404).render("404", {});
