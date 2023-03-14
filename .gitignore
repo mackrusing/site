@@ -1,5 +1,5 @@
 # node artifacts
-node_modules
+node_modules/
 
 # system files
 .DS_Store
