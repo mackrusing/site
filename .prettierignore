@@ -2,8 +2,9 @@
 node_modules/
 package-lock.json
 
-# compiled files
+# compiled files & resources
 public/resources/
+out/
 
 # markdown files
 **/*.md
