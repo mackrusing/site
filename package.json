@@ -1,16 +1,14 @@
 {
   "name": "site",
-  "version": "0.2.0",
+  "version": "2.0.0",
   "author": "Mack Rusing",
-  "description": "My website.",
+  "description": "My static website.",
   "license": "MIT",
-  "main": "out/app/main.js",
+  "main": "",
   "scripts": {
-    "start": "node out/app/main.js",
-    "test": "npx nodemon out/app/main.js",
-    "build": "npx tsc --project tsconfig.app.json && npx sass sass/:out/styles/",
-    "watch-sass": "npx sass --watch sass/:out/styles/",
-    "watch-app": "npx tsc --watch --project tsconfig.app.json"
+    "test": "npx http-server build/",
+    "build": "chmod +x ./build.sh && ./build.sh",
+    "watch-sass": "npx sass --watch sass/:build/resources/styles/"
   },
   "homepage": "https://github.com/mackrusing/site#readme",
   "repository": {
@@ -20,16 +18,8 @@
   "bugs": {
     "url": "https://github.com/mackrusing/site/issues"
   },
-  "dependencies": {
-    "express": "^4.18.2"
-  },
   "devDependencies": {
-    "@tsconfig/node18": "^1.0.3",
-    "@types/express": "^4.17.17",
-    "@types/node": "^20.2.4",
-    "nodemon": "^2.0.20",
-    "prettier": "^2.8.4",
-    "sass": "^1.58.3",
-    "typescript": "^5.0.4"
+    "http-server": "^14.1.1",
+    "sass": "^1.58.3"
   }
 }
