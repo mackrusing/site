@@ -2,7 +2,7 @@
 node_modules/
 
 # compiled files
-resources/styles/
+out/
 
 # system files
 .DS_Store
