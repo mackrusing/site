@@ -46,6 +46,13 @@
   --font-size-l:   2.4rem;
   --font-size-xl:  2.8rem;
   --font-size-xxl: 3.2rem;
+  @media (max-width: 600px) {
+    --font-size-s:   1.4rem;
+    --font-size-m:   1.8rem; // base
+    --font-size-l:   2.2rem;
+    --font-size-xl:  2.6rem;
+    --font-size-xxl: 3.0rem;
+  }
 
   // font families
   --font-family-header: "IBM Plex Sans", sans-serif;
@@ -54,6 +61,6 @@
   --font-family-mono: monospace;
 
   // lengths
-  --length-content: calc(min(60ch, calc(100% - 6.4rem)));
-  --length-gutter: 3.2rem;
+  --length-content: calc(min(60ch, calc(100% - 5.6rem)));
+  --length-gutter: 2.8rem;
 }

@@ -7,6 +7,7 @@
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
 import Article from "@/components/article";
+import InlineLink from "@/components/inline-link";
 
 export default function HomePage() {
   return (
@@ -18,7 +19,7 @@ export default function HomePage() {
           Welcome! I'm Mack Rusing (<em>he/him</em>), a 17-year-old web & software developer currently living in Phoenix, Arizona.
         </p>
         <p>
-          I consider myself a full-stack developer, but I tend to concentrate more on server-side projects. Currently, I am focusing on API development with Express. You can check out all of my projects <a href="https://github.com/mackrusing" target="_blank" rel="noreferrer noopener">on GitHub</a>
+          I consider myself a full-stack developer, but I tend to concentrate more on server-side projects. Currently, I am focusing on API development with Express. You can check out all of my projects <InlineLink href="https://github.com/mackrusing">on Github</InlineLink>
         </p>
 
         {/* experience */}
@@ -27,7 +28,7 @@ export default function HomePage() {
           As mentioned above, I am a web & software developer. I am proficient in TypeScript (including JavaScript), Python, Sass (including CSS), and HTML. I also have experience in Java and Rust.
         </p>
         <p>
-          Recently, I created a full-stack TypeScript application for an event at the 2023 FBLA National Leadership Conference. The application provides a REST API and front-end web app for students to track involvement in school events. The project is not huge in scope but it demonstrates my capabilities in a wide range of web development. Feel free to check it out <a href="https://github.com/mackrusing/shs-activity-tracker-app" target="_blank" rel="noreferrer noopener">here</a>
+          Recently, I created a full-stack TypeScript application for an event at the 2023 FBLA National Leadership Conference. The application provides a REST API and front-end web app for students to track involvement in school events. The project is not huge in scope but it demonstrates my capabilities in a wide range of web development. Feel free to check it out <InlineLink href="https://github.com/mackrusing/shs-activity-tracker-app">here</InlineLink>
         </p>
         <p>
           TypeScript is currently my language of choice, but as I learn Rust in my spare time I hope to be creating more stuff with it soon.
