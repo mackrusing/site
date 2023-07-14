@@ -1,0 +1,21 @@
+.nav {
+  // flex
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  width: var(--length-content);
+  margin: 3.6rem auto;
+
+  // text
+  font-weight: 600;
+
+  .logo {
+    margin-right: auto;
+    font-size: var(--font-size-xxl);
+  }
+  .navLink {}
+  .disabled, .disabled:hover {
+    color: var(--color-shade-6);
+    cursor: default;
+  }
+}

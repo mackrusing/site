@@ -1,0 +1,17 @@
+.footer {
+  // box
+  width: var(--length-content);
+  margin: 4.0rem auto;
+
+  // text
+  text-align: center;
+  font-size: var(--font-size-s);
+  font-weight: 600;
+
+  p {
+    span {
+      color: var(--color-accent-0);
+      transform: translate(0, 0.5rem);
+    }
+  }
+}

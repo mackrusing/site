@@ -1,0 +1,33 @@
+.article {
+  // grid
+  display: grid;
+  grid-template-columns: 1fr var(--length-content) 1fr;
+  grid-column-gap: var(--length-gutter);
+  & > * {
+    grid-column: 2;
+  }
+
+  h2 {
+    font-size: var(--font-size-xl);
+    margin-top: 3.0rem;
+  }
+  p {
+    margin: 1.5rem 0;
+  }
+  a {
+    &:link, &:visited, &:hover, &:active {
+      text-decoration: underline;
+      text-underline-position: under;
+      text-decoration-thickness: 2px;
+      color: var(--color-accent-5);
+      transition: color 300ms;
+    }
+  
+    &:hover {
+      color: var(--color-accent-6);
+    }
+    &:active {
+      color: rgba(var(--color-accent-6), 0.5);
+    }
+  }
+}
