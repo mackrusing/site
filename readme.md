@@ -1,12 +1,7 @@
 # site
 
-built site structure
+## to-do
 
-```
-build/
-|-- index.html
-|-- 404.html
-`-- resources/
-    `-- styles/
-        `-- styles.css
-```
+- metadata
+- 404 page
+- error pages

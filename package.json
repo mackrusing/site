@@ -1,25 +1,21 @@
 {
-  "name": "site",
-  "version": "2.0.0",
-  "author": "Mack Rusing",
-  "description": "My static website.",
-  "license": "MIT",
-  "main": "",
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "npx http-server build/",
-    "build": "chmod +x ./build.sh && ./build.sh",
-    "watch-sass": "npx sass --watch sass/:build/resources/styles/"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "homepage": "https://github.com/mackrusing/site#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mackrusing/site.git"
-  },
-  "bugs": {
-    "url": "https://github.com/mackrusing/site/issues"
-  },
-  "devDependencies": {
-    "http-server": "^14.1.1",
-    "sass": "^1.58.3"
+  "dependencies": {
+    "@types/node": "20.4.2",
+    "@types/react": "18.2.15",
+    "@types/react-dom": "18.2.7",
+    "next": "13.4.9",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.63.6",
+    "typescript": "5.1.6"
   }
 }
