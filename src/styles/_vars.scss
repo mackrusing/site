@@ -4,40 +4,40 @@
 
 :root {
   // colors
-  --color-shade-0:  #fafafa; // background
-  --color-shade-1:  #fafafa;
-  --color-shade-2:  #cdced1;
-  --color-shade-3:  #a0a1a7;
-  --color-shade-4:  #9d9d9f;
-  --color-shade-5:  #83858b;
-  --color-shade-6:  #696c77;
-  --color-shade-7:  #51535d;
-  --color-shade-8:  #383a42; // foreground
-  --color-accent-0: #e45649; // red
-  --color-accent-1: #986801; // orange
-  --color-accent-2: #c18401; // yellow
-  --color-accent-3: #50a14f; // green
-  --color-accent-4: #0184bc; // cyan
-  --color-accent-5: #4078f2; // blue
-  --color-accent-6: #a626a4; // magenta
+  --color-shade-0:  #21252b; // background
+  --color-shade-1:  #282c34;
+  --color-shade-2:  #393e48;
+  --color-shade-3:  #4b515c;
+  --color-shade-4:  #5c6370;
+  --color-shade-5:  #636d83;
+  --color-shade-6:  #828997;
+  --color-shade-7:  #979eab;
+  --color-shade-8:  #abb2bf; // foreground
+  --color-accent-0: #e06c75; // red
+  --color-accent-1: #d19a66; // orange
+  --color-accent-2: #e5c07b; // yellow
+  --color-accent-3: #98c379; // green
+  --color-accent-4: #56b6c2; // cyan
+  --color-accent-5: #61afef; // blue
+  --color-accent-6: #c678dd; // magenta
 
-  @media (prefers-color-scheme: dark) {
-    --color-shade-0:  #21252b; // background
-    --color-shade-1:  #282c34;
-    --color-shade-2:  #393e48;
-    --color-shade-3:  #4b515c;
-    --color-shade-4:  #5c6370;
-    --color-shade-5:  #636d83;
-    --color-shade-6:  #828997;
-    --color-shade-7:  #979eab;
-    --color-shade-8:  #abb2bf; // foreground
-    --color-accent-0: #e06c75; // red
-    --color-accent-1: #d19a66; // orange
-    --color-accent-2: #e5c07b; // yellow
-    --color-accent-3: #98c379; // green
-    --color-accent-4: #56b6c2; // cyan
-    --color-accent-5: #61afef; // blue
-    --color-accent-6: #c678dd; // magenta
+  @media (prefers-color-scheme: light) {
+    --color-shade-0:  #fafafa; // background
+    --color-shade-1:  #fafafa;
+    --color-shade-2:  #cdced1;
+    --color-shade-3:  #a0a1a7;
+    --color-shade-4:  #9d9d9f;
+    --color-shade-5:  #83858b;
+    --color-shade-6:  #696c77;
+    --color-shade-7:  #51535d;
+    --color-shade-8:  #383a42; // foreground
+    --color-accent-0: #e45649; // red
+    --color-accent-1: #986801; // orange
+    --color-accent-2: #c18401; // yellow
+    --color-accent-3: #50a14f; // green
+    --color-accent-4: #0184bc; // cyan
+    --color-accent-5: #4078f2; // blue
+    --color-accent-6: #a626a4; // magenta
   }
 
   // font sizes
@@ -55,9 +55,9 @@
   }
 
   // font families
-  --font-family-header: "IBM Plex Sans", sans-serif;
-  --font-family-body: "IBM Plex Sans", sans-serif;
-  --font-family-icon: "Material Symbols Rounded";
+  --font-family-header: var(--font-ibm-plex-sans);
+  --font-family-body: var(--font-ibm-plex-sans);
+  --font-family-icon: var(--font-material-symbols-rounded);
   --font-family-mono: monospace;
 
   // lengths

@@ -1,12 +1,13 @@
 .footer {
   // box
   width: var(--length-content);
-  margin: 5.0rem auto;
+  margin: 0 auto;
+  padding: 4.8rem;
 
   // text
   text-align: center;
   font-size: var(--font-size-s);
-  font-weight: 600;
+  font-weight: 700;
 
   p {
     span {

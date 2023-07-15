@@ -1,7 +1,7 @@
 // main options
 .icon {
-  font-family: "Material Symbols Rounded";
-  font-weight: normal;
+  font-family: var(--font-family-icon);
+  font-weight: 400;
   font-style: normal;
   font-size: var(--font-size-m);  // preferred icon size (was 24px)
   display: inline-block;

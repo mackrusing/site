@@ -16,6 +16,6 @@ interface InlineLinkProps {
 
 export default function InlineLink({ children, href }: InlineLinkProps) {
   return (
-    <Link className={styles.link} href={href} target="_blank" rel="noreferrer noopener">{children} <Icon bold>arrow_forward</Icon></Link>
+    <Link className={styles.link} href={href} target="_blank" rel="noreferrer noopener">{children}<Icon bold>arrow_forward</Icon></Link>
   );
 }
