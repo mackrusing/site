@@ -7,7 +7,7 @@ export default function HomePage() {
       <div className="text-md max-w-screen-md p-5 lg:text-lg">
         <AnimatedItem delay={0} fromDirection="left">
           <p>
-            <strong>Hi, I'm Mack!</strong> I am an 18-year-old student and
+            <strong>Hi, I&apos;m Mack!</strong> I am an 18-year-old student and
             software engineer from Phoenix, Arizona.
           </p>
         </AnimatedItem>

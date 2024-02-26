@@ -54,7 +54,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link href="https://fastly-cloud.typenetwork.com/projects/7853/fontface.css?65dc1e11" rel="stylesheet" type="text/css" />
+        <link
+          href="https://fastly-cloud.typenetwork.com/projects/7853/fontface.css?65dc1e11"
+          rel="stylesheet"
+          type="text/css"
+        />
       </head>
       <body className={`dark ${sansFont.className}`}>{children}</body>
     </html>
