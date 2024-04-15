@@ -5,6 +5,8 @@ import { sleep } from "@/lib/utils";
 // hooks
 import { useState } from "react";
 import { useCopyToClipboard } from "@uidotdev/usehooks";
+// util
+import clsx from "clsx";
 
 export function CopyLink({
   children,
@@ -29,7 +31,12 @@ export function CopyLink({
         {children}
       </button>
       <span
-        className={`text-muted-foreground transition-opacity duration-200 ease-in-out ${feedbackIsVisible ? "opacity-100" : "opacity-0"}`}
+        className={clsx(
+          "text-muted-foreground transition-opacity duration-200 ease-in-out",
+          {
+            "opacity-0": !feedbackIsVisible,
+          },
+        )}
       >
         {" "}
         copied
