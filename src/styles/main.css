@@ -78,29 +78,41 @@
 /* animation classes */
 
 @keyframes slide-from-left {
-  from {transform: translateX(-1.2rem)}
-  to {transform: translateX(0)}
+  from {
+    transform: translateX(-1.2rem);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 @keyframes slide-from-top {
-  from {transform: translateY(-0.6rem)}
-  to {transform: translateY(0)}
+  from {
+    transform: translateY(-0.6rem);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 @keyframes fade-in {
-  from {opacity: 0%}
-  to {opacity: 100%}
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
 .animate-left {
-  animation: 
+  animation:
     500ms ease-out slide-from-left,
     500ms ease-out fade-in;
   animation-fill-mode: backwards;
 }
 
 .animate-top {
-  animation: 
+  animation:
     500ms ease-out slide-from-top,
     500ms ease-out fade-in;
   animation-fill-mode: backwards;

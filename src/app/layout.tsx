@@ -1,6 +1,8 @@
 // next
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
+// vercel
+import { SpeedInsights } from "@vercel/speed-insights/next";
 // styles
 import "@/styles/main.css";
 
@@ -62,7 +64,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`dark ${sansFont.className}`}>{children}</body>
+      <body className={`dark ${sansFont.className}`}>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
