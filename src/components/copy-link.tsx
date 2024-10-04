@@ -32,7 +32,7 @@ export function CopyLink({
       </button>
       <span
         className={clsx(
-          "text-muted-foreground transition-opacity duration-200 ease-in-out",
+          "text-muted-foreground transition-opacity duration-200 ease-in-out cursor-default",
           {
             "opacity-0": !feedbackIsVisible,
           },

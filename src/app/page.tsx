@@ -8,7 +8,7 @@ export default function HomePage() {
         <div className="max-w-screen-md p-5">
           <p className="animate-left a-delay-1">
             <strong>Hi, I&apos;m Mack!</strong> I am an 18-year-old student and
-            software engineer from Phoenix, Arizona.
+            software engineer currently living in Washington, DC.
           </p>
           <ul className="pt-5">
             <li className="animate-top a-delay-2">
